@@ -1,16 +1,14 @@
 package com.fury.flickerapp.base.core
 
 import android.app.Application
-import androidx.lifecycle.ViewModel
-import com.fury.flickerapp.ViewModelFactory
 import com.fury.flickerapp.base.network.ConnectivityInterceptor
 import com.fury.flickerapp.base.network.ConnectivityInterceptorImpl
 import com.fury.flickerapp.base.network.ServiceGenerator
-import com.fury.flickerapp.datasource.FlickerDataSource
-import com.fury.flickerapp.datasource.FlickerDataSourceImpl
-import com.fury.flickerapp.db.FlickerDatabase
-import com.fury.flickerapp.repository.FlickerRepository
-import com.fury.flickerapp.repository.FlickerRepositoryImpl
+import com.fury.flickerapp.data.datasource.FlickerDataSource
+import com.fury.flickerapp.data.datasource.FlickerDataSourceImpl
+import com.fury.flickerapp.data.db.FlickerDatabase
+import com.fury.flickerapp.data.repository.FlickerRepository
+import com.fury.flickerapp.data.repository.FlickerRepositoryImpl
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.x.androidXModule
@@ -28,6 +26,10 @@ class FlickerApp : Application() , KodeinAware {
         bind() from singleton { ServiceGenerator(instance()) }
         bind<FlickerDataSource>() with singleton { FlickerDataSourceImpl(instance()) }
         bind<FlickerRepository>() with singleton { FlickerRepositoryImpl(instance(),instance()) }
-        bind() from provider { ViewModelFactory(instance()) }
+        bind() from provider {
+            ViewModelFactory(
+                instance()
+            )
+        }
     }
 }

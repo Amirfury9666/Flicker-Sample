@@ -1,9 +1,9 @@
-package com.fury.flickerapp
+package com.fury.flickerapp.data.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import com.fury.flickerapp.db.FeedEntry
-import com.fury.flickerapp.repository.FlickerRepository
+import com.fury.flickerapp.data.db.FeedEntry
+import com.fury.flickerapp.data.repository.FlickerRepository
 import com.fury.flickerapp.utility.lazyDeferred
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.GlobalScope

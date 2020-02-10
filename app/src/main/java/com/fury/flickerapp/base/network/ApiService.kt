@@ -1,6 +1,6 @@
 package com.fury.flickerapp.base.network
 
-import com.fury.flickerapp.response.FlickerResponse
+import com.fury.flickerapp.data.response.FlickerResponse
 import kotlinx.coroutines.Deferred
 import retrofit2.http.GET
 import retrofit2.http.Query

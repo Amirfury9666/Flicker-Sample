@@ -1,10 +1,9 @@
-package com.fury.flickerapp.repository
+package com.fury.flickerapp.data.repository
 
 import androidx.lifecycle.LiveData
-import com.fury.flickerapp.datasource.FlickerDataSource
-import com.fury.flickerapp.db.FeedEntry
-import com.fury.flickerapp.db.FlickerDao
-import com.github.ajalt.timberkt.d
+import com.fury.flickerapp.data.datasource.FlickerDataSource
+import com.fury.flickerapp.data.db.FeedEntry
+import com.fury.flickerapp.data.db.FlickerDao
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

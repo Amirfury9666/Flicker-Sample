@@ -1,10 +1,8 @@
-package com.fury.flickerapp.db
+package com.fury.flickerapp.data.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.fury.flickerapp.response.Item
 import org.jetbrains.annotations.NotNull
-import org.jetbrains.annotations.Nullable
 
 @Dao
 

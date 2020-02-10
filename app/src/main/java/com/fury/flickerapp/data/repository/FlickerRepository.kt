@@ -1,7 +1,7 @@
-package com.fury.flickerapp.repository
+package com.fury.flickerapp.data.repository
 
 import androidx.lifecycle.LiveData
-import com.fury.flickerapp.db.FeedEntry
+import com.fury.flickerapp.data.db.FeedEntry
 
 interface FlickerRepository {
     suspend fun loadFeed(tag : String)

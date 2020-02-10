@@ -1,7 +1,7 @@
-package com.fury.flickerapp.db
+package com.fury.flickerapp.data.db
 
 import androidx.room.TypeConverter
-import com.fury.flickerapp.response.Item
+import com.fury.flickerapp.data.response.Item
 import com.fury.flickerapp.utility.fromJson
 import com.fury.flickerapp.utility.json
 import com.google.gson.Gson

@@ -1,8 +1,7 @@
-package com.fury.flickerapp.datasource
+package com.fury.flickerapp.data.datasource
 
 import androidx.lifecycle.LiveData
-import com.fury.flickerapp.db.FeedEntry
-import com.fury.flickerapp.response.Item
+import com.fury.flickerapp.data.db.FeedEntry
 
 interface FlickerDataSource {
     val downloadedFeeds : LiveData<FeedEntry>

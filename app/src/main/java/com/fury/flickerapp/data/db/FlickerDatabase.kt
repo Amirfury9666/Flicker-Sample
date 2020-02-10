@@ -1,11 +1,10 @@
-package com.fury.flickerapp.db
+package com.fury.flickerapp.data.db
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.fury.flickerapp.response.Item
 
 @Database(entities = [FeedEntry::class],version = 1,exportSchema = false)
 @TypeConverters(FeedConverter::class)

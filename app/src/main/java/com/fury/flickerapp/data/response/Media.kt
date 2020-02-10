@@ -1,4 +1,4 @@
-package com.fury.flickerapp.response
+package com.fury.flickerapp.data.response
 
 
 import com.google.gson.annotations.SerializedName

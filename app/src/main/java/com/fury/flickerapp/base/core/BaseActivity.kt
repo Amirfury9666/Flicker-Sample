@@ -1,7 +1,6 @@
-package com.fury.flickerapp.base
+package com.fury.flickerapp.base.core
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.MenuItem
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
@@ -44,6 +43,12 @@ abstract class BaseActivity<B : ViewDataBinding> : AppCompatActivity(),Coroutine
             it.setDisplayHomeAsUpEnabled(true)
             it.setDisplayShowHomeEnabled(true)
             it.setDisplayShowTitleEnabled(false)
+        }
+    }
+
+    fun setToolbarTitle(title : String){
+        supportActionBar?.let {
+            it.title = title
         }
     }
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {

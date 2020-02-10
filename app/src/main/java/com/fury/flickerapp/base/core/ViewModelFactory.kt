@@ -1,8 +1,9 @@
-package com.fury.flickerapp
+package com.fury.flickerapp.base.core
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.fury.flickerapp.repository.FlickerRepository
+import com.fury.flickerapp.data.viewmodel.FeedViewModel
+import com.fury.flickerapp.data.repository.FlickerRepository
 
 @Suppress("UNCHECKED_CAST")
 class ViewModelFactory(private val flickerRepository: FlickerRepository) : ViewModelProvider.NewInstanceFactory(){

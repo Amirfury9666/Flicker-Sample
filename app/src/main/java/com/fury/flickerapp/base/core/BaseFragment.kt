@@ -1,4 +1,4 @@
-package com.fury.flickerapp.base
+package com.fury.flickerapp.base.core
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -1,10 +1,9 @@
-package com.fury.flickerapp.datasource
+package com.fury.flickerapp.data.datasource
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.fury.flickerapp.base.network.ApiService
-import com.fury.flickerapp.db.FeedEntry
-import com.fury.flickerapp.response.Item
+import com.fury.flickerapp.data.db.FeedEntry
 import timber.log.Timber
 import java.lang.Exception
 

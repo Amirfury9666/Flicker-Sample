@@ -1,10 +1,10 @@
-package com.fury.flickerapp.db
+package com.fury.flickerapp.data.db
 
 import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
 import androidx.room.TypeConverters
-import com.fury.flickerapp.response.Item
+import com.fury.flickerapp.data.response.Item
 
 @Entity(indices = arrayOf(Index(value = ["tag"],unique = true)))
 data class FeedEntry(
